@@ -13,6 +13,8 @@ Whit a square image (PNG, JPG or GIF) in hand, open the site [*Favicon & App Ico
 
 ![upload-image]({{ "/assets/img/sample/upload-image.png" | relative_url }})
 
+![upload-image](../assets/img/sample/upload-image.png)
+
 Click button <kbd>Create Favicon</kbd> and wait a moment for the website to generate the icons of various sizes automatically.
 
 ![download-icons]({{ "/assets/img/sample/download-icons.png" | relative_url }})
