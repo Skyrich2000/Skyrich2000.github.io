@@ -7,32 +7,36 @@ tags: [study, rl]     # TAG names should always be lowercase
 
 ## 시작하기 전에
 
-[팡요랩 강화학습 7강]() 의 내용을 보고 정리한것입니다.
+[팡요랩 강화학습 7강](https://youtu.be/2YFBordM1fA) 의 내용을 보고 정리한것입니다.
 
 ## Introduction of Policy Gradient
 
 ### Value Function Approach
 
 * 지금까지 강화학습은 value function을 기반으로 동작
-* 이런 방법은 deterministic한 policy를 찾게됨
+* 이런 방법은 deterministic policy를 구함 (e.g. $\epsilon$-greedy)
 * stochastic policy, high-dimensional, continuous action spaces 를 위해
-* policy search라는 새로운 방법이 나옴
+* policy search라는 새로운 방법이 나왔다.
 
 > deterministic : 특정 state에 대해 결정될 action이 정해져있음  
 > stochastic : 특정 state에 대해 결정될 action이 확률적으로 정해짐
 >  
 > ex) 가위바위보, Aliased Gridworld
 
+* But
 * 로컬 최저점에 빠지기 쉽다
 * 비효율적이고 분산이 크다
 
 ### Policy Search
 
-* 목적 함수 $J$
+* 목적 함수 $J$ 3가지
   * expected return $E[R | \theta]$가 최대가 되도록
-  * start value $J(\theta)=V^{\pi_\theta}(S_1)=E_{\pi_\theta}[v_1]$
-  * average value $J(\theta)=\sum_sd^{\pi_\theta}(s)V^{\pi_\theta}(s)$
-  * average reward per time-step $J(\theta)=\sum_sd^{\pi_\theta}(s)\sum_a\pi_\theta(s,a)R^a_s$ 
+  * start value
+    $$J(\theta)=V^{\pi_\theta}(S_1)=E_{\pi_\theta}[v_1]$$
+  * average value
+    $$J(\theta)=\sum_sd^{\pi_\theta}(s)V^{\pi_\theta}(s)$$
+  * average reward per time-step
+    $$J(\theta)=\sum_sd^{\pi_\theta}(s)\sum_a\pi_\theta(s,a)R^a_s$$
 
   > stationary distribution $d^{\pi_\theta}(s)$
 
