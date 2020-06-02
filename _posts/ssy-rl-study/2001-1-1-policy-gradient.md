@@ -56,9 +56,10 @@ tags: [study, rl]     # TAG names should always be lowercase
   * $\nabla_\theta\pi_\theta(s,a)$ 를 안다.
   
 * Likelihood ratios trick
-  
-    ![1](/assets/img/2020-05-17-policy-gradient/2020-05-17-policy-gradient_203055.png)
-
+  $$\begin{aligned}
+    \nabla_\theta\pi_\theta(s,a) &= \pi_\theta(s,a)\cfrac{\nabla_\theta\pi_\theta(s,a)}{\pi_\theta(s,a)} \\
+    &= \pi_\theta(s,a)\nabla_\theta\log\pi_\theta(s,a)
+  \end{aligned}$$
 
 <!-- Softmax Policy / Gaussian Policy 에서 φ(s)가 무엇? -->
 
