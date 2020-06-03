@@ -202,7 +202,7 @@ $$\delta_v=r+\gamma V_v(s')-V_v(s)$$
 > 델타 하나는 다르지만 평균을 취하면 A가 된다?
 
 <!-- 분산, 샘플간의 독립성 -->
-
+<!-- state를 하나만 보지 않고 지금까지의 전체 state를 보는건 안하나 -->
 ## 참고
 
 [RLKorea sutton PG](https://reinforcement-learning-kr.github.io/2018/06/28/1_sutton-pg/)  
